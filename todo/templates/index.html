@@ -1,0 +1,13 @@
+{% include 'partials/header.html' %}
+    <ul>
+        {% for todo in todos %}
+            <li>
+                <a href="/todo/subir/{{todo.prioridad}}"><button type="button">Subir</button></a>
+                <a href="/todo/bajar/{{todo.prioridad}}"><button type="button">Bajar</button></a>
+                <a href="/todo/delete/{{todo.prioridad}}"><button type="button">Borrar</button></a>
+                <a href="/todo/details/{{todo.prioridad}}"></a> {{todo.title}} {{ todo.prioridad }}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% include 'partials/footer.html' %}

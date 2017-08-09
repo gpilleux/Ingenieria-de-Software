@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+<header>
+    <h1>Todo List</h1>
+    <form action="add.html" method="post">
+        {% csrf_token %}
+        <input type="text" name="new_todo" id="new_todo" />
+        <input type="submit" value="Add Todo"></input>
+    </form>
+    <hr>
+</header>
+<body>
